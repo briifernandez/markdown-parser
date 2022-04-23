@@ -24,20 +24,24 @@ public class MarkdownParse {
             }
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
+
             // System.out.println(currentIndex);
             
             
+
+	    System.out.println(currentIndex);
+
         }
 
         return toReturn;
     }
-
 
     public static void main(String[] args) throws IOException {
         Path fileName = Path.of(args[0]);
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
 	    System.out.println(links.toString());
+
         
     }
 }
