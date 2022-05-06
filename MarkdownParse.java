@@ -30,7 +30,10 @@ public class MarkdownParse {
             
 
 	    // System.out.println(currentIndex);
-
+            int x = 1;
+            System.out.println(x);
+            int y = 1;
+            System.out.println(y);
         }
 
         return toReturn;
@@ -41,6 +44,7 @@ public class MarkdownParse {
         String content = Files.readString(fileName);
         ArrayList<String> links = getLinks(content);
 	    System.out.println(links);
+        //aaa
 
         
     }
